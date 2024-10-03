@@ -31,7 +31,7 @@ def buy_order_market(order_size, out_file):
     on this buy market order transaction, by consuming the 
     order size (the number of shares want to buy)
     
-    buy_order_market: anyof(Int Float) anyof(Int Float) File -> None
+    buy_order_market: anyof(Int Float) anyof(Int Float) Str -> None
     
     '''
     shares=0
@@ -63,7 +63,7 @@ def sell_order_market(order_size, outfile):
     on this sell market order transaction, by consuming the 
     order size (the number of shares want to sell)
     
-    sell_order_market: anyof(Int Float) anyof(Int Float) File -> None
+    sell_order_market: anyof(Int Float) anyof(Int Float) Str -> None
     
     '''
     shares=0
@@ -96,7 +96,7 @@ def limit_order_buy(order_size, price_willing, outfile):
     on this limit order buy transaction by consuming the 
     order size and the max price willing to buy
     
-    limit_order_buy: anyof(Int Float) anyof(Int Float) File -> None
+    limit_order_buy: anyof(Int Float) anyof(Int Float) Str -> None
     
     '''
     shares_bought = 0
@@ -133,7 +133,7 @@ def limit_order_sell(order_size, price_willing, outfile):
     order size (the number of shares want to buy) and the 
     lowest price willing to sell. 
     
-    limit_order_sell: anyof(Int Float) anyof(Int Float) File -> None
+    limit_order_sell: anyof(Int Float) anyof(Int Float) Str -> None
     '''
     shares_sold = 0
     proceeds = 0
