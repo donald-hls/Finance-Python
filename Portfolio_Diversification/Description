@@ -1,0 +1,16 @@
+This is a Python-based model that use Pandas, Matplotlib to optimize portfolio diversification across 5 sectors, reducing
+volatility compared to high-risk stocks. Analyzed risk-return tradeoffs using Sharpe ratios and visualized
+performance trends within various sectors. 
+
+I Created a customized portfolio aligned with my own somewhat risk-averse preferences, named as Personal_Portfolio. 
+I've always been trying to overcome my greediness in investing, Thus, I try to use my portfolio as a guide to help me 
+navigate my investment Strategies. 
+
+My Personal Portfolio includes: Nvidia, BND (Bond ETF), MS (Morgan Stanley), XLF (Finance Secotr ETF), QQQ (Tech ETF). 
+Some of the data insights are included inside the file attached within this directory. 
+
+* Note: This project is purely for personal interests and exploration pursposes, it should not be used as an investment advice,
+financial advice, or a recommendation to buy or sell any securities or financial instruments. Past performance is not indicative of future results. 
+Investing involves risks, including the potential loss of principal. :) 
+
+Hope you enjoyed reading about my project. 
