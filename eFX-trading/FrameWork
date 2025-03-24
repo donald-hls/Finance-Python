@@ -1,0 +1,26 @@
+This is the general FrameWork for my eFX trading strategy: 
+
+#Part 1: Acquiring the data:
+       - Ideally, this could be timely data, constantly 
+       grabbing real-time bid and ask prices of the two currencies from Yfinance. 
+       including the base currency (ones you are buying), and the quote currency (ones you are selling). 
+       Considerations:
+                       - How often should I update the price? ideally: minutes.
+                       - Should we keep historical data for back testing? Yes, constantly writing to a txt file?
+
+#Part 2: Function Design:
+       - Building a function that checks for criterias such that if this trade meets the criteria of being
+       traded electronically. We want to
+                                           1. keep a tight bid-ask spread
+                                                - Trade takes place if the spread is < 2 pips 
+                                           2. check the volume of the order
+                                           3. Not causing a slippage 
+                                                - Ensure order size ≤ 10% of 5-minute rolling average 
+                                                volume to avoid slippage.
+                                           4. Consider Immediate Execution vs Optimal Pricing. (Market vs Limit Orders)
+
+#Part 3: Calculating the P&L , Performance trackiing 
+       - Continously tracking unrealized and realized P&L to monitor live performance.
+       - Transaction Cost included: 
+                                           1. explicit transaction costs (commissions, fees) 
+                                           2. mplicit costs (spread costs, slippage).
