@@ -1,0 +1,16 @@
+The project allows you to investigate: 
+
+  - Market Orders / Limit Orders
+  - Trading FX with real-time bid-ask with tight spread
+  - In the event of large volume orders, break into Algo orders to avoid slippage
+  - Tracking PnL
+
+
+Issues / Areas to Improve: 
+  If you have any ideas to improve the code posted or would love to talk about it, happy to chat. 
+
+1. Not being to access faster real time data, currently relying on 1.5 sec - 3 sec delay per YFinance Query. 
+  - This issue is reflected in the screenshots attached in the directory. 
+2. Could Potentially add more risk management strategies. 
+  - How does auto hedge work? taking an opposite position of your trade? if yes, by how much? 
+  - What's the risk tolerance? 
